@@ -96,9 +96,9 @@ const allClearButton = document.querySelector('[data-all-clear]')
 // display
 const previousOperandTextElement = document.querySelector('[data-previous-operand]')
 const currentOperandTextElement = document.querySelector('[data-current-operand]')
-//
+//Create new calculator
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
-
+// LOOP over all the button
 numberButtons.forEach(button => {
   button.addEventListener('click', () => {
     // pass number to append number function
@@ -130,7 +130,7 @@ deleteButton.addEventListener('click', button => {
 })
 
 
-// Theme channger
+// Theme changer
 function applyTheme(theme) {
   document.body.classList.remove("theme-auto", "theme-light", "theme-dark");
   document.body.classList.add(`theme-${theme}`);
